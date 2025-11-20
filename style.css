@@ -145,6 +145,50 @@ section {
     padding-bottom: 2px;
 }
 
+.certifications {
+    background-color: #f8f9ff;
+}
+
+.cert-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.cert-item {
+    display: flex;
+    gap: 1rem;
+    padding: 1.25rem;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    align-items: flex-start;
+}
+
+.cert-item i {
+    font-size: 1.8rem;
+    color: #3498db;
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+}
+
+.cert-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.35rem;
+}
+
+.cert-desc {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
 /* プロジェクト紹介セクション */
 .projects {
     background-color: #f8f9fa;
@@ -170,6 +214,18 @@ section {
     box-shadow: 0 8px 15px rgba(0,0,0,0.2);
 }
 
+.project-card--stacked .project-sublist {
+    margin: 1rem 0 0;
+    padding-left: 1.25rem;
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.project-card--stacked .project-sublist li + li {
+    margin-top: 0.75rem;
+}
+
 .project-image {
     width: 100%;
     height: 200px;
@@ -187,6 +243,13 @@ section {
 
 .project-content {
     padding: 1.5rem;
+}
+
+.project-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 0.6rem;
 }
 
 .project-content h3 {
