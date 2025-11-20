@@ -1,171 +1,192 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ポートフォリオサイト</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- ナビゲーション -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">ポートフォリオ</div>
-            <ul class="nav-menu">
-                <li><a href="#about">自己紹介</a></li>
-                <li><a href="#projects">プロジェクト</a></li>
-                <li><a href="#contact">お問い合わせ</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- ヒーローセクション -->
-    <section class="hero">
-        <div class="container">
-            <h1>IT分野で活躍する<br>エンジニアのポートフォリオ</h1>
-            <p>最新技術を駆使したソリューションを提供します</p>
-        </div>
-    </section>
-
-    <!-- 自己紹介セクション -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">自己紹介</h2>
-            <div class="about-content">
-                <p>
-                    こんにちは。IT分野で活躍する...いや、正確には<strong class="highlight">「かつて活躍していた」</strong>エンジニアです。
-                    <em class="emphasis">昔は手でコーディングしていました。</em>キーボードを叩き、エディタと向き合い、バグと格闘する日々。
-                    その頃は「自分で書いたコード」という誇りがありました。今思えば、あれは遠い昔の話です。
-                </p>
-                <p>
-                    <strong class="highlight">現在はAIエージェントにすべてのコーディングを任せています。</strong>私の役割は、AIに「ここをこうして」と
-                    指示を出すことだけ。実際にキーボードを触ることはほとんどありません。タイピングスキルは衰える一方ですが、
-                    <em class="emphasis">プロンプトエンジニアリングのスキルは日々向上しています。</em>時代の流れとは、こういうものなのでしょう。
-                </p>
-                <p>
-                    それでも、このポートフォリオサイトは私が「指示」を出して作りました。AIが書いたコードかもしれませんが、
-                    コンセプトは私のものです...多分。いや、AIが提案したコンセプトを私が承認しただけかもしれません。
-                    <strong class="highlight">境界線が曖昧になってきました</strong>が、それもまた現代のエンジニアリングの姿なのかもしれません。
-                </p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ポートフォリオサイト</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <!-- ナビゲーション -->
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">ポートフォリオ</div>
+                <ul class="nav-menu">
+                    <li><a href="#about">自己紹介</a></li>
+                    <li><a href="#projects">プロジェクト</a></li>
+                    <li><a href="#contact">お問い合わせ</a></li>
+                </ul>
             </div>
-        </div>
-    </section>
+        </nav>
 
-    <!-- プロジェクト紹介セクション -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">プロジェクト紹介</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">プロジェクト1</div>
-                    </div>
-                    <div class="project-content">
-                        <h3>ダミー1</h3>
-                        <p>
-                            このプロジェクトは、最新のWeb技術を活用したアプリケーション開発です。
-                            ユーザーフレンドリーなインターフェースと高いパフォーマンスを実現しました。
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">TypeScript</span>
-                            <span class="tag">Node.js</span>
-                        </div>
-                    </div>
-                </div>
+        <!-- ヒーローセクション -->
+        <section class="hero">
+            <div class="container">
+                <h1>IT分野で活躍する<br />エンジニアのポートフォリオ</h1>
+                <p>最新技術を駆使したソリューションを提供します</p>
+            </div>
+        </section>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">プロジェクト2</div>
-                    </div>
-                    <div class="project-content">
-                        <h3>ダミー2</h3>
-                        <p>
-                            モバイルアプリケーションの開発プロジェクトです。クロスプラットフォーム対応により、
-                            iOSとAndroidの両方で動作するアプリを提供しています。
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Flutter</span>
-                            <span class="tag">Dart</span>
-                            <span class="tag">Firebase</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">プロジェクト3</div>
-                    </div>
-                    <div class="project-content">
-                        <h3>ダミー3</h3>
-                        <p>
-                            クラウドインフラの構築と運用自動化プロジェクトです。AWSを活用し、
-                            スケーラブルで安全なインフラストラクチャを構築しました。
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">AWS</span>
-                            <span class="tag">Terraform</span>
-                            <span class="tag">Docker</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">プロジェクト4</div>
-                    </div>
-                    <div class="project-content">
-                        <h3>ダミー4</h3>
-                        <p>
-                            このプロジェクトは、最新のWeb技術を活用したアプリケーション開発です。
-                            ユーザーフレンドリーなインターフェースと高いパフォーマンスを実現しました。
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">TypeScript</span>
-                            <span class="tag">Node.js</span>
-                        </div>
-                    </div>
+        <!-- 自己紹介セクション -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">自己紹介</h2>
+                <div class="about-content">
+                    <p>
+                        こんにちは。IT分野で活躍する...いや、正確には<strong
+                            class="highlight"
+                            >「かつて活躍していた」</strong
+                        >エンジニアです。
+                        <em class="emphasis"
+                            >昔は手でコーディングしていました。</em
+                        >キーボードを叩き、エディタと向き合い、バグと格闘する日々。
+                        その頃は「自分で書いたコード」という誇りがありました。今思えば、あれは遠い昔の話です。
+                    </p>
+                    <p>
+                        <strong class="highlight"
+                            >現在はAIエージェントにすべてのコーディングを任せています。</strong
+                        >私の役割は、AIに「ここをこうして」と
+                        指示を出すことだけ。実際にキーボードを触ることはほとんどありません。タイピングスキルは衰える一方ですが、
+                        <em class="emphasis"
+                            >プロンプトエンジニアリングのスキルは日々向上しています。</em
+                        >時代の流れとは、こういうものなのでしょう。
+                    </p>
+                    <p>
+                        それでも、このポートフォリオサイトは私が「指示」を出して作りました。AIが書いたコードかもしれませんが、
+                        コンセプトは私のものです...多分。いや、AIが提案したコンセプトを私が承認しただけかもしれません。
+                        <strong class="highlight"
+                            >境界線が曖昧になってきました</strong
+                        >が、それもまた現代のエンジニアリングの姿なのかもしれません。
+                    </p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- お問い合わせフォームセクション -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">お問い合わせ</h2>
-            <form id="contactForm" class="contact-form">
-                <div class="form-group">
-                    <label for="name">名前</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">メールアドレス</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">メッセージ</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">
-                    <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
-                    <span>送信</span>
-                </button>
-            </form>
-            <div id="formMessage" class="form-message"></div>
-        </div>
-    </section>
+        <!-- プロジェクト紹介セクション -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">プロジェクト紹介</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">プロジェクト1</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>ダミー1</h3>
+                            <p>
+                                このプロジェクトは、最新のWeb技術を活用したアプリケーション開発です。
+                                ユーザーフレンドリーなインターフェースと高いパフォーマンスを実現しました。
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">Node.js</span>
+                            </div>
+                        </div>
+                    </div>
 
-    <!-- フッター -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Portfolio. All rights reserved.</p>
-        </div>
-    </footer>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">プロジェクト2</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>ダミー2</h3>
+                            <p>
+                                モバイルアプリケーションの開発プロジェクトです。クロスプラットフォーム対応により、
+                                iOSとAndroidの両方で動作するアプリを提供しています。
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Flutter</span>
+                                <span class="tag">Dart</span>
+                                <span class="tag">Firebase</span>
+                            </div>
+                        </div>
+                    </div>
 
-    <script src="script.js"></script>
-</body>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">プロジェクト3</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>ダミー3</h3>
+                            <p>
+                                クラウドインフラの構築と運用自動化プロジェクトです。AWSを活用し、
+                                スケーラブルで安全なインフラストラクチャを構築しました。
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">AWS</span>
+                                <span class="tag">Terraform</span>
+                                <span class="tag">Docker</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">プロジェクト4</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>ダミー4</h3>
+                            <p>
+                                このプロジェクトは、最新のWeb技術を活用したアプリケーション開発です。
+                                ユーザーフレンドリーなインターフェースと高いパフォーマンスを実現しました。
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- お問い合わせフォームセクション -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">お問い合わせ</h2>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">名前</label>
+                        <input type="text" id="name" name="name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">メールアドレス</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">メッセージ</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            required
+                        ></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i
+                            class="fa-solid fa-paper-plane"
+                            aria-hidden="true"
+                        ></i>
+                        <span>送信</span>
+                    </button>
+                </form>
+                <div id="formMessage" class="form-message"></div>
+            </div>
+        </section>
+
+        <!-- フッター -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 Portfolio. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
 </html>
-
